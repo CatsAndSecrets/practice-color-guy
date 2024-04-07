@@ -1,20 +1,6 @@
 #Theodore Perron, 3/30/24 color picker in 
 import sys, os, pygame
 
-def resource_path(relative_path):
-    try:
-    # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-
-    return os.path.join(base_path, relative_path)
-
-from pygame.locals import *
-pygame.init()
-
-
-
 dim = 255
 dimdiv = dim/255
 screen = pygame.display.set_mode((dim, dim), pygame.NOFRAME)
